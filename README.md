@@ -3,8 +3,6 @@ Applying the Character-Role Narrative Framework with LLMs to Investigate Climate
 
 ## LICENSE
 
-The content of this repository is licensed under the [MIT License](LICENSE) unless otherwise noted.
-
 The `tweet_dataset` included in this repository is released under the [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
 
 This means you are free to:
