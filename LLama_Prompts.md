@@ -212,3 +212,47 @@ IMPORTANT: DO NOT CHANGE THE INPUT TEXT, ONLY ADD THE TAGS.
 Note: Be attentive to the linguistic cues and specific wording used by the author, as they will guide you in assigning the correct roles. Avoid inferring roles based on outside knowledge or assumptions.
 
 Here is the text to annotate:
+
+##Character Categorization Prompt
+
+Task Overview: You are given a text. Each text represents a unique entity, and your task is to categorize the entity based on one of three categories: Human, Instrumental, or Natural. Below are the definitions for each category, along with relevant examples.
+
+Categories:
+Human Characters:
+These include humans or entities made up of people, such as corporations, governments, organizations of any type (e.g., religious), and political movements. Examples: 
+"Oil and gas industry" (categorized as Human because it refers to a group of businesses).
+"World" (categorized as Human when referring to governments, organizations, or companies).
+"Low-income areas" (categorized as Human because it refers to the people living in those areas).
+"Natural community" (categorized as Human when referring to a community of people living in harmony with nature).
+Instrumental Characters:
+These are more abstract entities such as policies, laws, technologies, measures, objects, or human-driven processes (e.g., "urbanization," "deforestation",  “city growth”). They can also be artifacts or processes that (i) have been produced or initiated by human characters
+Examples:
+"Pesticides and fertilizers" (categorized as Instrumental because they are human-made technologies).
+"Carbon emissions" (categorized as Instrumental because they result from human processes).
+"Rewilding" (categorized as Instrumental because it is a human-driven effort to help nature).
+"Lower Snake River dams" (categorized as Instrumental because the dams are human-made structures).
+"30x30 policy" (categorized as Instrumental because it refers to a human-created policy).
+"Hunting" (categorized as Instrumental because it refers to a human-driven process).
+"Buildings" or "Temples" (categorized as Instrumental because they are objects created by humans).
+"PFAS" (categorized as Instrumental because it is a human-made technology/chemical).
+Natural Characters: These comprise non-human entities such as natural elements (e.g., soil, oceans), animals, nature itself, and the planet. They can also include natural processes or phenomena (e.g., “biodiversity loss,” “climate change,” “pandemic”).
+Examples:
+"Europe" (categorized as Natural when referring to the geographical region and its natural elements, rather than its people).
+"Smoke" (categorized as Natural when referring to poor air quality from smoke, assuming it is not human-caused).
+Output Format:
+You must return the input text with each entity labeled using in-line tag annotations (<start_token>text<end_token>), where the tag corresponds to a category name. The only available tags are:
+Human: <HUM>text</HUM>
+Instrumental: <INS>text</INS>
+Natural: <NAT>text</NAT>
+Examples:
+<HUM>oil and gas industry</HUM>
+<HUM>low-income communities</HUM>
+<INS>30x30 policy</INS>
+<INS>pesticides and fertilizers</INS>
+<NAT>climate change</NAT>
+<NAT>the ocean</NAT>
+
+IMPORTANT: always consider the entity in input as a single one to annotate, even the ones with more than one word
+
+Here is the text to annotate:
+
