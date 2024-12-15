@@ -240,7 +240,7 @@ Note: Be attentive to the linguistic cues and specific wording used by the autho
 
 Here is the text to annotate:
 
-##Character Categorization Prompt
+## Character Categorization Prompt
 
 Task Overview: You are given a text. Each text represents a unique entity, and your task is to categorize the entity based on one of three categories: Human, Instrumental, or Natural. Below are the definitions for each category, along with relevant examples.
 
